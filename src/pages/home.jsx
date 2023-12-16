@@ -3,7 +3,7 @@ import { useAllProducts } from "../hooks/useProducts";
 import { LoaderComponent, ItemListContainer } from "../components";
 
 export const Home = () => {
-  const { products, loading, error } = useAllProducts(10);
+  const { products, loading, error } = useAllProducts("products");
 
   return (
     <div>
